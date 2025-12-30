@@ -2,3 +2,92 @@ body {
   font-family: system-ui, sans-serif;
   padding: 40px;
 }
+/* General Header Styles */
+.main-header {
+  background-color: #969696;
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 40px; /* adjust as needed */
+  width: auto;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #484848;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-menu a:hover {
+  background-color: #484848;
+  color: #969696;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #969696;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.dropdown-content li {
+  padding: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Auth Buttons */
+.auth-buttons a {
+  text-decoration: none;
+  color: #484848;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons a:hover {
+  background-color: #484848;
+  color: #969696;
+}
